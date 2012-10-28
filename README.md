@@ -3,6 +3,9 @@
 Page Objects is a simple web application framework that uses custom HTML tags to load PHP objects into web pages.
 The HTML pages have no PHP code at all, only custom tags to call the PHP objects.
 
+
+Not much to see but an example installation can be viewed at http://www.xorengineering.com/code/page-objects/
+
 -----------------------------
 
 # Installation
@@ -19,6 +22,16 @@ The HTML pages have no PHP code at all, only custom tags to call the PHP objects
 ---------------------------------
 
 # Developing Web Pages
+
+The framework uses HTML files for the application views. These views are all located in the views/ path or in a subdirectory of the views path.
+
+When developing an HTML view the PHP objects can be included by utilizing the custom <ob> tag with the name of the PHP object and any needed parameters.
+
+As an example, assume that you have a common HTML header file in a subdirectory named subviews with the filename header.html.
+To load this common header file into the index.html view at the top of the page you would use the following <ob> tag...
+
+	<ob='loadview' view='subviews/header'>
+
 
 
 ---------------------------------
