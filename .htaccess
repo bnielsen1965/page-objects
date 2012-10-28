@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /page-objects/
+
+# finished if URL is already index.php
+RewriteRule ^index\.php.*$ - [L]
+
+#if not a file or directory then rewrite
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [QSA,L]
