@@ -4,7 +4,7 @@ Page Objects is a simple web application framework that uses custom HTML tags to
 The HTML pages have no PHP code at all, only custom tags to call the PHP objects.
 
 
-Not much to see but an example installation can be viewed at http://www.xorengineering.com/code/page-objects/
+Not much to see but an example installation can be viewed at http://www.getwebscripts.com/demos/page-objects/
 
 -----------------------------
 
